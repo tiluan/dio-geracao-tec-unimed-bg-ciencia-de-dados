@@ -1,0 +1,11 @@
+- Clonar um repositório para a máquina
+git clone URL DO GIT
+
+- Identificar se tem algum documento/arquivo novo para subir
+git status
+
+- Enviar algum documento/arquivo novo para subir
+git add.
+
+- Efetivar a inclusão do documento/arquivo novo ao subir
+git commit -m "Descrição da versão ou modificação realizada"
