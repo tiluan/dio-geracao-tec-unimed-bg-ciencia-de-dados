@@ -5,8 +5,8 @@ import pandas as pd
 df = pd.read_csv(r'D:/OneDrive/Documentos/GitHub/dio-geracao-tec-unimed-bg-ciencia-de-dados/04 - Análise de dados com Python e Pandas/Gapminder.csv', sep=";")
 
 print(df)
-# Exibindo as 5 primeiras linhas do DataFrame
-print(df.head())
+# Exibindo as 10 primeiras linhas do DataFrame
+print(df.head(10))
 
 # Renomeando as colunas do DataFrame utilizando um dicionário
 df = df.rename(columns={"country":"Pais", "continent": "continente", "year":"Ano", "lifeExp":"Expectativa de vida", "pop":"Pop Total", "gdpPercap": "PIB"})
@@ -40,6 +40,7 @@ print(Oceania.head())
 print(Oceania["continente"].unique())
 
 # Agrupando as linhas do DataFrame por continente e exibindo o número de países em cada continente
+# nunique é utilizado para fazer uma contagem distinta de países no continente
 print(df.groupby("continente")["Pais"].nunique())
 
 # Agrupando as linhas do DataFrame por ano e exibindo a média da expectativa de vida para cada ano
